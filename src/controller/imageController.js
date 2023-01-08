@@ -42,7 +42,7 @@ const createImage = async (req, res) => {
           if(monthFormat<10){
               monthFormat = '0'+ monthFormat
           } 
-          let dateFormat = dayFormat + '-' + monthFormat + '-' + yearFormat
+          let dateFormat = yearFormat + '-' + monthFormat + '-' + dayFormat
         
           data.uploadedDate = dateFormat
 
