@@ -28,10 +28,6 @@ const createImage = async (req, res) => {
     } else
         return res.status(400).send({ status: false, message: "Please upload  image" });
 
-          // let today = new Date()
-          // let dateFormat = today.getDate()+ '-' + (today.getMonth()+1) + '-' + today.getFullYear()
-          //    data.uploadedDate = dateFormat
-
           let today= new Date()
           let dayFormat = today.getDate()
           let monthFormat = today.getMonth()+1
